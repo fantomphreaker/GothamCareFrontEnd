@@ -10,6 +10,8 @@ import { EventsComponent } from './events/events.component';
 import { OutletsComponent } from './outlets/outlets.component';
 import {OutletserviceService} from './outletservice.service';
 import { VolunteersComponent } from './volunteers/volunteers.component';
+import { VolunteerserviceService} from './volunteerservice.service';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -24,9 +26,10 @@ import { VolunteersComponent } from './volunteers/volunteers.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
-  providers: [OutletserviceService],
+  providers: [OutletserviceService, VolunteerserviceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

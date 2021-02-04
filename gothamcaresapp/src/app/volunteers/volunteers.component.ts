@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {VolunteerserviceService} from '../volunteerservice.service';
+
 
 @Component({
   selector: 'app-volunteers',
@@ -7,9 +9,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class VolunteersComponent implements OnInit {
 
-  constructor() { }
+  constructor(private volunteerservice: VolunteerserviceService) { }
+  
+  onSubmit(data){
+    this.volunteerservice.postData(data);
+    console.warn(data);
+  }
 
   ngOnInit(): void {
+
+    
   }
 
 }
