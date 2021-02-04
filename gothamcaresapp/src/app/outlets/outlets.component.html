@@ -1,0 +1,29 @@
+<h3>Outlets</h3>
+ 
+<table class="outlettable">
+    <tr>
+        <th>Outlet Name</th>
+        <th>Street Name</th>
+        <th>Landmark</th>
+        <th>Available Food Packets</th>
+        <th>Food Type</th>
+        <th>Volunteers Required</th>
+        <th>Opening Date</th>
+      </tr>
+      <tr *ngFor="let outlet of outletdata; let i= index">
+        <td>{{outlet.outletName}}</td>
+        <td>{{outlet.streetName}}</td>
+        <td>{{outlet.landmark}}</td>
+        <td>{{outlet.totalAvailableFoodPackets}}</td>
+        <td>{{foodType[outlet.foodType]}}</td>
+        <td>{{outlet.requiredNoOfVolunteers}}</td>
+        <td>{{outlet.date |  date:'d/M/y'}}</td>
+      </tr>
+  </table>
+  <div>
+   <h4>Volunteer</h4>
+   <p>If you're interested to volunteer in the distribution of food to the needy, join our cause.</p>
+   <button class="btn" routerLink="/volunteers">
+     VOLUNTEER
+   </button>
+  </div>
