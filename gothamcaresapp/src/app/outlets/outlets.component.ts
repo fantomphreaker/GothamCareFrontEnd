@@ -11,6 +11,8 @@ export class OutletsComponent implements OnInit {
   constructor(private outletservice: OutletserviceService) { }
   public foodType = ["Both", "Veg", "Non-Veg"];
 
+  
+
   ngOnInit(): void {
       
       this.outletservice.getData().subscribe((data) => {
@@ -19,8 +21,12 @@ export class OutletsComponent implements OnInit {
     }
 
     );
-
-
+    
+    
+  }
+  
+  public get getOutlets(){
+    return this.outletdata;
   }
 
 

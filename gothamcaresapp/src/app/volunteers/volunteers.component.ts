@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {VolunteerserviceService} from '../volunteerservice.service';
+import {OutletsComponent} from '../outlets/outlets.component';
+
 
 
 @Component({
@@ -9,11 +11,14 @@ import {VolunteerserviceService} from '../volunteerservice.service';
 })
 export class VolunteersComponent implements OnInit {
 
+ 
   constructor(private volunteerservice: VolunteerserviceService) { }
+  
   
   onSubmit(data){
     this.volunteerservice.postData(data);
     console.warn(data);
+    
   }
 
   ngOnInit(): void {
