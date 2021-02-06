@@ -25,9 +25,7 @@ export class OutletsComponent implements OnInit {
     
   }
   
-  public get getOutlets(){
-    return this.outletdata;
-  }
+  
 
 
 }

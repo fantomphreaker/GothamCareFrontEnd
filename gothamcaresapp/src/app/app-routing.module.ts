@@ -7,6 +7,7 @@ import { OutletsComponent } from './outlets/outlets.component';
 import { VolunteersComponent } from './volunteers/volunteers.component';
 
 const routes: Routes = [
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
   {path:"home", component:HomeComponent },
   {path:"contactus", component:ContactusComponent},
   {path:"events", component:EventsComponent},

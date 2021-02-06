@@ -4,11 +4,11 @@
 }
 
 header{
-    background:#35424a;
+    background:#073b4c;
     color:#ffffff;
     padding-top:30px;
     min-height:70px;
-    border-bottom:#e8491d 3px solid;
+    border-bottom:#ef476f 3px solid;
   }
 
   header a{
@@ -19,7 +19,7 @@ header{
   }
   
   header a:hover{
-    background-color: #e8491d;
+    background-color: #ef476f;
   }
   
   header li{
@@ -40,4 +40,15 @@ header{
   header nav{
     float:right;
     margin-top:10px;
+
   }
+  footer{
+    padding:20px;
+    
+    color:#ffffff;
+    background-color:#ef476f;
+    position: relative;
+    text-align: center;
+  } 
+  
+  

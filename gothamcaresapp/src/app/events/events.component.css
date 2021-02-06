@@ -1,0 +1,25 @@
+ /* Main-col */
+ article#main-col{
+    float:left;
+    width:65%;
+  }
+  
+  /* Events */
+  ul#events li{
+    list-style: none;
+    padding:20px;
+    border: #cccccc solid 1px;
+    margin-bottom:5px;
+    background:#e6e6e6;
+  }
+
+  a{
+      text-decoration: none;
+      color: #ffff;
+      background:#073b4c;
+      padding: 0.1rem;
+  }
+
+  a:hover{
+    background-color: #ef476f;
+  }

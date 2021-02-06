@@ -3,6 +3,25 @@ body{
     font: 15px/1.5 Arial, Helvetica,sans-serif;
     padding:0;
     margin:0;
-    
+    font-family: 'Pontano Sans', sans-serif;
     overflow: hidden;
   }
+
+  .container{
+    width:80%;
+    margin:auto;
+    overflow:hidden;
+  }
+  
+  ul{
+    margin:0;
+    padding:0;
+  }
+  footer{
+    
+    width: auto;
+    color:#ffffff;
+    background-color:#ef476f;
+    text-align: center;
+    position: absolute;
+  }  

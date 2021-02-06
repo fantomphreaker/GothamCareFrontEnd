@@ -1,4 +1,12 @@
 <h3>Outlets</h3>
+<aside id="sidebar">
+  <div class="dark">
+    <h3>Did you know ?</h3>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, beatae vero facilis rem corrupti molestias, voluptate dolor harum soluta veritatis optio dolorem ratione nulla voluptatibus, laboriosam cupiditate nemo minima. Corporis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Non laudantium quo nihil ea culpa ex repudiandae deleniti impedit, minima, qui itaque, eveniet eligendi porro velit dolorem quod dicta? Voluptate, esse.
+    </p>
+  </div>
+</aside>
  
 <table class="outlettable">
     <tr>
@@ -8,7 +16,7 @@
         <th>Available Food Packets</th>
         <th>Food Type</th>
         <th>Volunteers Required</th>
-        <th>Opening Date</th>
+        <th>Open On</th>
       </tr>
       <tr *ngFor="let outlet of outletdata; let i= index">
         <td>{{outlet.outletName}}</td>
@@ -22,8 +30,10 @@
   </table>
   <div>
    <h4>Volunteer</h4>
-   <p>If you're interested to volunteer in the distribution of food to the needy, join our cause.</p>
+   <p>If you're interested to volunteer in the distribution of food to the needy, join our cause. Are you interested in volunteering in one of our outlets?
    <button class="btn" routerLink="/volunteers">
-     VOLUNTEER
+     Yes, I'm Interested.
    </button>
+  </p>
+  
   </div>
