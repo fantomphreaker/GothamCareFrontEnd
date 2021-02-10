@@ -42,3 +42,16 @@ aside#sidebar .quote input, aside#sidebar .quote textarea{
   margin-top:10px;
   margin-bottom:10px;
 }
+
+.outlettable{
+  margin: auto;
+}
+
+.volunteer, .outlet-heading{
+  margin-left: 20px;
+ 
+}
+
+.volunteer{
+  margin-bottom: 60px;
+}

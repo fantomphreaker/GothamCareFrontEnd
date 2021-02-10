@@ -1,0 +1,15 @@
+<div>
+    <h3>Admin Sign In</h3>
+
+<form class="sign-in" #userPost="ngForm" (ngSubmit)="onSubmit(userPost.value)">
+    <input type="text" name="Email" ngModel placeholder="Email"> <br><br>
+    <input type="password" name="Password" ngModel placeholder="Password"> <br><br>
+
+<button type="submit" >
+Sign In
+</button>
+<br>
+<br>
+</form>
+
+</div>

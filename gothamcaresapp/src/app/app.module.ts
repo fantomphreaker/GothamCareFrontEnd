@@ -12,6 +12,12 @@ import {OutletserviceService} from './outletservice.service';
 import { VolunteersComponent } from './volunteers/volunteers.component';
 import { VolunteerserviceService} from './volunteerservice.service';
 import { FormsModule } from '@angular/forms';
+import { SigninComponent } from './signin/signin.component';
+import { AdminComponent } from './admin/admin.component';
+import { SigninserviceService } from './signinservice.service';
+import { AdminviewoutletsComponent } from './adminviewoutlets/adminviewoutlets.component';
+import { AddoutletComponent } from './addoutlet/addoutlet.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -21,15 +27,20 @@ import { FormsModule } from '@angular/forms';
     ContactusComponent,
     EventsComponent,
     OutletsComponent,
-    VolunteersComponent
+    VolunteersComponent,
+    SigninComponent,
+    AdminComponent,
+    AdminviewoutletsComponent,
+    AddoutletComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
-  providers: [OutletserviceService, VolunteerserviceService],
+  providers: [OutletserviceService, VolunteerserviceService, SigninserviceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,0 +1,61 @@
+<div class="container-fluid">
+    <span class="navbar-brand mb-0 h1"><h1>Welcome Admin</h1></span>
+  
+    <div class="btn-group" role="group" aria-label="Basic example" >
+       
+        <button class="btn" routerLink="/adminviewoutlets">Distribution Outlets</button>
+    </div>
+  
+    <div class="btn-group" role="group" aria-label="Basic example">
+        <button class="btn" routerLink="/addoutlet">Add New Outlet</button>
+        <button type="button" class="btn btn-outline-dark">Edit/Delete Outlets</button>
+    </div>
+    
+  </div>
+
+<div class="formbox">
+    <h3>Enter Outlet Details</h3>
+    <form [formGroup]="addoutletform" (ngSubmit)="onSubmit()">
+        <label>
+            Outlet Name:
+        <input type="text" formControlName="outletName">
+        </label> 
+        <br><br>
+        <label >
+            Street Name:
+            <input type="text" formControlName="streetName">
+        </label>
+         <br><br>
+         <label>
+             Landmark:
+             <input type="text" formControlName="landmark"> 
+         </label>
+         <br><br>
+        <label>
+            Total Available Food Packets:
+            <input type="number" formControlName="totalAvailableFoodPackets">
+        </label>
+        <br><br>
+        <!-- <input type="number" name="foodType" ngModel placeholder="Both/Veg/Non-veg"> <br><br> -->
+        <input type="radio" formControlName="foodType" value="both">
+            <label>Both</label>
+        <input type="radio"  formControlName="foodType" value="veg">
+            <label>Veg</label>
+        <input type="radio" formControlName="foodType" value="nonveg">
+            <label>Non-Veg</label> 
+            <br><br>
+            <label>
+                No. of Volunteers:
+                <input type="number" formControlName="requiredNoOfVolunteers">
+            </label>
+         <br><br>
+         <label>
+             Date of Opening:
+             <input type="date" formControlName="date"> 
+         </label>
+        <br><br>
+        <button type="submit">Add Outlet</button>
+    
+    </form>
+    
+</div>

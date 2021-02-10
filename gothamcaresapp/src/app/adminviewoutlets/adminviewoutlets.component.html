@@ -1,0 +1,35 @@
+<div class="container-fluid">
+  <span class="navbar-brand mb-0 h1"><h1>Welcome Admin</h1></span>
+
+  <div class="btn-group" role="group" aria-label="Basic example" >
+     
+      <button class="btn" routerLink="/adminviewoutlets">Distribution Outlets</button>
+  </div>
+
+  <div class="btn-group" role="group" aria-label="Basic example">
+      <button class="btn" routerLink="/addoutlet">Add New Outlet</button>
+      <button type="button" class="btn btn-outline-dark">Edit/Delete Outlets</button>
+  </div>
+  
+</div>
+<h3>Outlets List</h3>
+<table class="outlettable">
+    <tr>
+        <th>Outlet Name</th>
+        <th>Street Name</th>
+        <th>Landmark</th>
+        <th>Available Food Packets</th>
+        <th>Food Type</th>
+        <th>Volunteers Required</th>
+        <th>Open On</th>
+      </tr>
+      <tr *ngFor="let outlet of outletdata; let i= index">
+        <td>{{outlet.outletName}}</td>
+        <td>{{outlet.streetName}}</td>
+        <td>{{outlet.landmark}}</td>
+        <td>{{outlet.totalAvailableFoodPackets}}</td>
+        <td>{{foodType[outlet.foodType]}}</td>
+        <td>{{outlet.requiredNoOfVolunteers}}</td>
+        <td>{{outlet.date |  date:'d/M/y'}}</td>
+      </tr>
+  </table>

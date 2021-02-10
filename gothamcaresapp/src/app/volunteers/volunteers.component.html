@@ -1,9 +1,37 @@
 <h3>Enter your details</h3>
-<form #userPost="ngForm" (ngSubmit)="onSubmit(userPost.value)">
-    <input type="text" name="volunteerName" ngModel placeholder="Name"> <br><br>
-    <input type="text" name="volunteerAddress" ngModel placeholder="Address"> <br><br>
-    <input type="text" name="volunteerPhoneNumber" ngModel placeholder="Phone Number"> <br><br>
-    <input type="number" name="outletID" ngModel placeholder="Outlet ID"> <br><br>
-    <button type="submit">SUBMIT</button>
+<form [formGroup]="volunteerForm" (ngSubmit)="onSubmit()">
+    <label>
+        Name:
+        <input type="text" formControlName="volunteerName">
+    </label>
+    <br><br>
+    <label>
+        Address:
+        <input type="text" formControlName="volunteerAddress">
+    </label>
+    <br><br>
+    <label>
+        Phone Number:
+        <input type="text" formControlName="volunteerPhoneNumber">
+    </label>
+    <br><br>
+    <!-- <label>
+        Outlet ID:
+        <input type="number" formControlName="outletID">
+    </label> -->
 
+    <label>
+        Outlet:
+        <select formControlName="outletID">
+            <option *ngFor="let outlet of outletdata; let i = index" [ngValue]="outlet.id">
+              {{outlet.outletName}}
+            </option>
+        </select>
+       
+    </label>
+    <br><br>
+
+    <button type="submit" [disabled]="!volunteerForm.valid">SUBMIT</button>
 </form>
+
+
