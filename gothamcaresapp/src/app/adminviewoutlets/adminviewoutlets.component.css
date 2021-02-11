@@ -10,4 +10,12 @@ table {
   }
   .btn-group{
     display: inline;
+  }
+
+.outlettable{
+  margin-left: 20px;
+}
+
+.container-fluid{
+  margin-left: 20px;
 }
