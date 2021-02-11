@@ -1,0 +1,20 @@
+.btn-group{
+    display: inline;
+}
+
+.container-fluid{
+    margin: 0 0 0 20px;
+}
+
+.delbtn{
+    margin-left: 10px;
+    
+}
+
+.btnn{
+    margin-bottom: 20px;
+}
+
+.editordelete{
+    margin-left: 20px;
+}

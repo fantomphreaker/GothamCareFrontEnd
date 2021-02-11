@@ -1,0 +1,73 @@
+<div class="container-fluid">
+    <span class="navbar-brand mb-0 h1"><h1>Welcome Admin</h1></span>
+  
+    <div class="btn-group" role="group" aria-label="Basic example" >
+       
+        <button class="btn" routerLink="/adminviewoutlets">Distribution Outlets</button>
+    </div>
+  
+    <div class="btn-group" role="group" aria-label="Basic example">
+        <button class="btn" routerLink="/addoutlet">Add New Outlet</button>
+        <button class="btn" routerLink="/editdeleteoutlet" >Edit/Delete Outlets</button>
+    </div>
+    <br><br>
+  </div>
+
+  <div class="editordelete">
+    <h3>Edit/Delete Outlet</h3>
+
+    <form [formGroup]="modifyoutletform" (ngSubmit)="onSubmit()">
+      <label>
+          Outlet:
+          <select formControlName="id">
+              <option *ngFor="let outlet of outletdata; let i = index" [ngValue]="outlet.id">
+                {{outlet.outletName}}
+              </option>
+          </select>
+      </label>
+      <br><br>
+      <label>
+          Outlet Name:
+      <input type="text" formControlName="outletName">
+      </label> 
+      <br><br>
+      <label >
+          Street Name:
+          <input type="text" formControlName="streetName">
+      </label>
+       <br><br>
+       <label>
+           Landmark:
+           <input type="text" formControlName="landmark"> 
+       </label>
+       <br><br>
+      <label>
+          Total Available Food Packets:
+          <input type="number" formControlName="totalAvailableFoodPackets">
+      </label>
+      <br><br>
+      <!-- <input type="number" name="foodType" ngModel placeholder="Both/Veg/Non-veg"> <br><br> -->
+      <input type="radio" formControlName="foodType" value="both">
+          <label>Both</label>
+      <input type="radio"  formControlName="foodType" value="veg">
+          <label>Veg</label>
+      <input type="radio" formControlName="foodType" value="nonveg">
+          <label>Non-Veg</label> 
+          <br><br>
+          <label>
+              No. of Volunteers:
+              <input type="number" formControlName="requiredNoOfVolunteers">
+          </label>
+       <br><br>
+       <label>
+           Date of Opening:
+           <input type="date" formControlName="date"> 
+       </label>
+      <br><br>
+      <button class="btnn" type="submit">Edit Outlet</button>
+      <button class="delbtn" routerLink="/deleteoutlet">Delete Outlet</button>
+    </form>
+    
+  
+  
+  </div>

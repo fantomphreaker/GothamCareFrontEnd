@@ -18,6 +18,10 @@ import { SigninserviceService } from './signinservice.service';
 import { AdminviewoutletsComponent } from './adminviewoutlets/adminviewoutlets.component';
 import { AddoutletComponent } from './addoutlet/addoutlet.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { EditdeleteoutletComponent } from './editdeleteoutlet/editdeleteoutlet.component';
+import { EditdeleteoutletserviceService} from './editdeleteoutletservice.service';
+import { DeleteoutletComponent } from './deleteoutlet/deleteoutlet.component';
+import { DeleteoutletserviceService } from './deleteoutletservice.service';
 
 @NgModule({
   declarations: [
@@ -31,7 +35,9 @@ import { ReactiveFormsModule } from '@angular/forms';
     SigninComponent,
     AdminComponent,
     AdminviewoutletsComponent,
-    AddoutletComponent
+    AddoutletComponent,
+    EditdeleteoutletComponent,
+    DeleteoutletComponent
   ],
   imports: [
     BrowserModule,
@@ -40,7 +46,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     FormsModule,
     ReactiveFormsModule
   ],
-  providers: [OutletserviceService, VolunteerserviceService, SigninserviceService],
+  providers: [OutletserviceService, VolunteerserviceService, SigninserviceService, EditdeleteoutletserviceService, DeleteoutletserviceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,0 +1,12 @@
+.btn-group{
+    display: inline;
+}
+
+.container-fluid{
+    margin: 0 0 0 20px;
+}
+
+.formblock{
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
