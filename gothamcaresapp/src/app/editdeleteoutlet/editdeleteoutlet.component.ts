@@ -3,6 +3,18 @@ import { FormBuilder } from '@angular/forms';
 import { EditdeleteoutletserviceService } from '../editdeleteoutletservice.service';
 import { OutletserviceService } from '../outletservice.service';
 
+/**
+ * This component is to modify the outlet data stored in the database through the API.
+ * This component after loading, the page is rendered with a form where the new values of the selected outlet can be entered. 
+ * After submission, the form data is taken and is sent to the API as API requests.
+ * Members:
+ * outletdata - Array which stored the outlets, each element is an outlet object.
+ * modifyoutletform - The form data is stored in this.
+ * fb - An instance of FormBuilder which is used to create the reactive form.
+ * outletservice - Instance of Outletserviceservice which is used to fetch outlet data from the api as soon as the component is loaded.
+ * editdeleteoutletservice - Instance of EditdeleteoutletserviceService which is used to make API to perform PUT operation on an Outlet.
+ */
+
 @Component({
   selector: 'app-editdeleteoutlet',
   templateUrl: './editdeleteoutlet.component.html',
