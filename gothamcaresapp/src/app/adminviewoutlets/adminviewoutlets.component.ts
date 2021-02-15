@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { OutletserviceService } from '../outletservice.service';
+import { OutletserviceService } from '../services/outletservice.service';
 
 @Component({
   selector: 'app-adminviewoutlets',

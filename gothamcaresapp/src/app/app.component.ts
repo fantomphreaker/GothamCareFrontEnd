@@ -1,7 +1,7 @@
 import { getLocaleFirstDayOfWeek } from '@angular/common';
 import { componentFactoryName } from '@angular/compiler';
 import { Component, ɵwhenRendered } from '@angular/core';
-import { OutletserviceService } from './outletservice.service';
+import { OutletserviceService } from './services/outletservice.service';
 
 /**  
   * This is the main or root component which is always loaded first.

@@ -8,20 +8,20 @@ import { HomeComponent } from './home/home.component';
 import { ContactusComponent } from './contactus/contactus.component';
 import { EventsComponent } from './events/events.component';
 import { OutletsComponent } from './outlets/outlets.component';
-import {OutletserviceService} from './outletservice.service';
+import {OutletserviceService} from './services/outletservice.service';
 import { VolunteersComponent } from './volunteers/volunteers.component';
-import { VolunteerserviceService} from './volunteerservice.service';
+import { VolunteerserviceService} from './services/volunteerservice.service';
 import { FormsModule } from '@angular/forms';
 import { SigninComponent } from './signin/signin.component';
 import { AdminComponent } from './admin/admin.component';
-import { SigninserviceService } from './signinservice.service';
+import { SigninserviceService } from './services/signinservice.service';
 import { AdminviewoutletsComponent } from './adminviewoutlets/adminviewoutlets.component';
 import { AddoutletComponent } from './addoutlet/addoutlet.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { EditdeleteoutletComponent } from './editdeleteoutlet/editdeleteoutlet.component';
-import { EditdeleteoutletserviceService} from './editdeleteoutletservice.service';
+import { EditdeleteoutletserviceService} from './services/editdeleteoutletservice.service';
 import { DeleteoutletComponent } from './deleteoutlet/deleteoutlet.component';
-import { DeleteoutletserviceService } from './deleteoutletservice.service';
+import { DeleteoutletserviceService } from './services/deleteoutletservice.service';
 
 @NgModule({
   declarations: [
