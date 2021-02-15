@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder } from '@angular/forms';
-import { EditdeleteoutletserviceService } from '../editdeleteoutletservice.service';
-import { OutletserviceService } from '../outletservice.service';
+import { EditdeleteoutletserviceService } from '../services/editdeleteoutletservice.service';
+import { OutletserviceService } from '../services/outletservice.service';
 
 /**
  * This component is to modify the outlet data stored in the database through the API.

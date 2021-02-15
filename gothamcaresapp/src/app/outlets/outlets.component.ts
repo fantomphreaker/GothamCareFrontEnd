@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { OutletserviceService} from '../outletservice.service';
+import { OutletserviceService} from '../services/outletservice.service';
 /**
  * On loading of this component, the information about the outlets are shown in tabular form.
  * This component is loaded after clicking the 'SHOW ALL OUTLETS' link shown in the events component. 

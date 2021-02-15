@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder } from '@angular/forms';
-import { DeleteoutletserviceService } from '../deleteoutletservice.service';
-import { OutletserviceService } from '../outletservice.service';
+import { DeleteoutletserviceService } from '../services/deleteoutletservice.service';
+import { OutletserviceService } from '../services/outletservice.service';
 
 @Component({
   selector: 'app-deleteoutlet',

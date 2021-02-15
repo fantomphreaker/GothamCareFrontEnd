@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { OutletserviceService } from '../outletservice.service';
-import {VolunteerserviceService} from '../volunteerservice.service';
+import { OutletserviceService } from '../services/outletservice.service';
+import {VolunteerserviceService} from '../services/volunteerservice.service';
 import { FormBuilder, FormControl, FormGroup } from '@angular/forms';
 import { Validators } from '@angular/forms';
 
